@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Media query for mobile view */
+      @media only screen and (max-width: 600px) {
+        form {
+          width: 100%;
+        }
+      }
+    </style>
     <link rel="stylesheet" href="coffee.css">
   </head>
   <body>
@@ -21,24 +30,25 @@
       <!-- Pickup time -->
       <label for="appt">Pickup Time:</label>
       <input type="time" id="ordertime" name="Pickup Time"
-            min="07:00" max="12:00" required>
+            min="07:00" max="12:00" value="8:00" required>
       <small>Our hours are 7:00 - 12:00 Monday through Friday.</small>
-      <label></label>
+      <h3> ------------------------------------ </h3>
       <input type="submit" value="Submit">
     </form>
     <div id="thankyou-message"></div>
     <script>
       function submitForm() {
         var name = document.getElementById("name").value;
-        var ordertime = documet.getElementById("ordertime").value;
         var coffee = document.getElementById("coffee").value;
-        var message = "Thank you for your order " + name + ". We will notify you when your " + coffee + " is ready 	&#128516; &#9749;";
+        var message = "Thank you for your order " + name + ". \nWe will notify you when your " + coffee + " is ready 	&#128516; &#9749;";
         document.getElementById("thankyou-message").innerHTML = message;
         return false;
       }
     </script>
   </body>
 </html>
+
+<!-- TODO: set local time +10 min as default. Add message to us when ordering -->
 
 
 
