@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="coffee.css">
+  </head>
+  <body>
+    <h1>Coffee Order Form</h1>
+    <form onsubmit="return submitForm();">
+      <!-- Customer information -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <!-- Beverage information -->
+      <label for="coffee">Choose a coffee:</label>
+      <select id="coffee" name="coffee">
+        <option value="latte">Latte</option>
+        <option value="cappuccino">Cappuccino</option>
+        <option value="espresso">Espresso</option>
+      </select>
+
+      <!-- Pickup time -->
+      <label for="appt">Pickup Time:</label>
+      <input type="time" id="ordertime" name="Pickup Time"
+            min="07:00" max="12:00" required>
+      <small>Our hours are 7:00 - 12:00 Monday through Friday.</small>
+      <label></label>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="thankyou-message"></div>
+    <script>
+      function submitForm() {
+        var name = document.getElementById("name").value;
+        var ordertime = documet.getElementById("ordertime").value;
+        var coffee = document.getElementById("coffee").value;
+        var message = "Thank you for your order " + name + ". We will notify you when your " + coffee + " is ready 	&#128516; &#9749;";
+        document.getElementById("thankyou-message").innerHTML = message;
+        return false;
+      }
+    </script>
+  </body>
+</html>
+
+
+
