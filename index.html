@@ -13,34 +13,51 @@
     <link rel="stylesheet" href="coffee.css">
   </head>
   <body>
-    <h1>Coffee Order Form</h1>
+    <h1>AM Coffee Company</h1>
     <form onsubmit="return submitForm();">
       <!-- Customer information -->
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
 
       <!-- Beverage information -->
-      <label for="coffee">Choose a coffee:</label>
+      <label for="coffee">Select your coffee:</label>
       <select id="coffee" name="coffee">
-        <option value="latte">Latte</option>
-        <option value="cappuccino">Cappuccino</option>
-        <option value="espresso">Espresso</option>
+        <option value="drip coffee">Drip Coffee</option>
+        <option value="pour over">Pour Over</option>
+        <option value="aeropress">Aeropress</option>
+      </select>
+
+      <label for="coffee">Size:</label>
+      <select id="coffee" name="coffee">
+        <option value="latte">Small (12 oz.)</option>
+        <option value="cappuccino">Large (20 oz.)</option>
       </select>
 
       <!-- Pickup time -->
       <label for="appt">Pickup Time:</label>
-      <input type="time" id="ordertime" name="Pickup Time"
-            min="07:00" max="12:00" value="8:00" required>
-      <small>Our hours are 7:00 - 12:00 Monday through Friday.</small>
-      <h3> ------------------------------------ </h3>
-      <input type="submit" value="Submit">
+      <div class="center">       
+        <input type="time" id="ordertime" name="Pickup Time"
+        min="07:00" max="11:00" value="8:00" required>
+        <small>Our hours are 7:00 - 11:00 AM Monday through Friday.</small>
+      </div>
+
+      <h3> Please venmo @aidan-boyne! We will only start your order once we recive the venmo. Thanks!</h3>
+      <div class = "center">
+        <input type="submit" value="Submit">
+      </div>
     </form>
     <div id="thankyou-message"></div>
+    <div class="center">
+      <h3> Pickup at 700 Levering Courtyard <br> 
+        Made with &#10084; by Aidan and Mike <br><br><br>
+        Feel free to text at (903)-504-7952 with any special requests or order updates
+      </h3>
+    </div>
     <script>
       function submitForm() {
         var name = document.getElementById("name").value;
         var coffee = document.getElementById("coffee").value;
-        var message = "Thank you for your order " + name + ". \nWe will notify you when your " + coffee + " is ready 	&#128516; &#9749;";
+        var message = "Thank you for your order " + name + ". \nWe will notify you when your " + coffee + " is ready for pickup &#128516; &#9749;";
         document.getElementById("thankyou-message").innerHTML = message;
         return false;
       }
