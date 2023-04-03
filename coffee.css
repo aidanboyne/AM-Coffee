@@ -6,6 +6,11 @@ h1 {
   text-align: center;
   color: #2F4858;
 }
+h3 {
+  text-align: center;
+  color: #2F4858;
+  font-size: 14px;
+}
 small {
     border: 2px solid #fff;
     border-radius: 5px;
