@@ -69,6 +69,7 @@
       </div>
     </div>
     <div id="thankyou-message"></div>
+    <div id="info-message"></div>
     <div class="center">
       <h3> Pickup at 700 Levering Courtyard <br> 
         Made with &#10084; by Aidan and Mike <br><br><br>
@@ -80,11 +81,12 @@
         var name = document.getElementById("name").value;
         var coffee = document.getElementById("coffee").value;
         var size = document.getElementById("size").value;
-        var milk = document.getElementById("addMilk").value;
+        var milk = document.getElementById("milk").value;
         var sugar = document.getElementById("sweetener").value;
-        var message = "Thank you for your order " + name + ". \nWe will notify you when your " + size + " " + coffee + " is ready for pickup &#128516; &#9749;";
+        var message = "Thank you for your order " + name + ". We will notify you when your " + size + " " + coffee + " is ready for pickup &#128516; &#9749;";
         var info = "Milk: " + milk + "\tSugar:" + sugar;  
-        document.getElementById("thankyou-message").innerHTML = message + info;
+        document.getElementById("thankyou-message").innerHTML = message;
+        document.getElementById("info-message").innerHTML = info;
         return false;
       }
     </script>

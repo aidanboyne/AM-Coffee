@@ -2,6 +2,18 @@ body {
   font-family: Arial, sans-serif;
   background-color: #F7F7F7;
 
+  animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+
   /* background-image: url('./BKG2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -14,11 +26,11 @@ body {
 }
 h1 {
   text-align: center;
-  color: #2F4858;
+  color: #000b12;
 }
 h3 {
   text-align: center;
-  color: #2F4858;
+  color: #000b12;
   font-size: 14px;
 }
 small {
@@ -28,10 +40,10 @@ small {
     width: 100%;
     margin-bottom: 10px;
     font-size: 12px;
-    color: #2F4858;
+    color: #000b12;
 }
 .form {
-  background-color: #acd2ebbd;
+  background-color: #707578bd;
   border-radius: 10px;
   padding: 20px;
   width: 80%;
@@ -41,20 +53,20 @@ small {
 label {
   display: block;
   margin-bottom: 10px;
-  color: #2F4858;
+  color: #000b12;
 }
 input[type="text"],
 select {
-  border: 2px solid #2F4858;
+  border: 2px solid #000b12;
   border-radius: 5px;
   padding: 5px;
   width: 100%;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #2F4858;
+  color: #000b12;
 }
 input[type="submit"] {
-  background-color: #2F4858;
+  background-color: #000b12;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -69,12 +81,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
   margin: auto;
   text-align: center;
-  background-color: #3f6278;
+  background-color: #707578bd;
 }
 #thankyou-message {
   text-align: center;
   margin-top: 20px;
-  color: #2F4858;
+  color: #000b12;
+  font-size: 20px;
+}
+#info-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #000b12;
   font-size: 20px;
 }
 
