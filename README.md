@@ -1,2 +1,3 @@
 # AM-Coffee
-Mike and Aidan's Nice Coffee Shop
+### Unit 2 Coffeeshop. Los Angeles CA
+__Aidan, Mike, Ryan__
