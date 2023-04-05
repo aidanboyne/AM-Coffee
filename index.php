@@ -59,7 +59,7 @@
       <label for="time">Pickup Time:</label>
       <div class="center">       
         <input type="time" id="ordertime" name="time"
-        min="07:00" max="11:00" value="8:00">
+        min="07:00" max="11:00" value="08:00">
         <small>Our hours are 7:00 - 11:00 AM Monday through Friday.</small>
       </div>
 
@@ -90,34 +90,3 @@
         return false;
       }
     </script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
-      import { firestore } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries'
-    
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyBWc3YcnFw03lJMjIUBO6qFeuM-fwki-_g",
-        authDomain: "am-coffeela.firebaseapp.com",
-        projectId: "am-coffeela",
-        storageBucket: "am-coffeela.appspot.com",
-        messagingSenderId: "817724508577",
-        appId: "1:817724508577:web:d7b337187aebff03dba3e0",
-        measurementId: "G-2MTT68R9ML"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-    </script>
-  </body>
-</html>
-
-<!-- TODO: set local time +10 min as default. Add message to us when ordering -->
-
-
-
