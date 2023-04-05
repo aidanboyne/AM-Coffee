@@ -83,9 +83,17 @@ input[type="submit"]:hover {
   text-align: center;
   background-color: #707578bd;
 }
+.thanks {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
 #thankyou-message {
   text-align: center;
-  margin-top: 20px;
   color: #000b12;
   font-size: 20px;
 }
